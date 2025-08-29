@@ -24,7 +24,7 @@ Dengan memasukkan kata kunci pencarian, pengguna dapat memperoleh daftar artikel
 Proyek ini terhubung dengan **MySQL** untuk menyimpan umpan balik pengguna.
 
 - **Nama Database:** `user_auth`  
-- **Nama Tabel:** `feedback`
+- **Nama Tabel:** `feedback.sql`
 
 👉 Skrip SQL untuk membuat tabel tersedia secara terpisah dalam repositori.
 
