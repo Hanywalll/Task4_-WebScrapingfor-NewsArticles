@@ -36,5 +36,3 @@ Nama Tabel: feedback
 👉 Skrip SQL untuk membuat tabel tersedia secara terpisah dalam repositori.
 
 
-
-Elemen HTML yang hilang
