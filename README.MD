@@ -1,11 +1,15 @@
-Web Scraping for News Articles
-Proyek
-Proyek ini adalah skrip Python yang dirancang untuk melakukan web scraping artikel berita dari situs https://www.detik.com/.
+📰 Web Scraping for News Articles (Detik.com)
+📌 Deskripsi Proyek
 
-Fitur
-Menerima input berupa kata kunci pencarian.
+Proyek ini adalah aplikasi web scraping berbasis Python yang dirancang untuk mengambil artikel berita dari Detik.com
+.
+Dengan memasukkan kata kunci pencarian, pengguna dapat memperoleh daftar artikel yang relevan beserta detailnya.
 
-Mengambil detail artikel:
+✨ Fitur
+
+🔍 Menerima input berupa kata kunci pencarian.
+
+📑 Mengambil detail artikel:
 
 Judul
 
@@ -15,35 +19,48 @@ Teks isi
 
 Waktu publikasi
 
-Mendukung penomoran halaman (pagination) hingga 3 halaman.
+📄 Mendukung pagination hingga 3 halaman hasil pencarian.
 
-Menghilangkan iklan atau tag HTML yang tidak relevan.
+🧹 Menghapus iklan dan tag HTML yang tidak relevan.
 
-Menggunakan requests dan BeautifulSoup untuk fungsionalitas inti.
+⚡ Menggunakan requests dan BeautifulSoup sebagai inti scraping.
 
-Database
-Proyek ini terhubung ke database MySQL. Berikut adalah detailnya:
+🗄️ Database
+
+Proyek ini terhubung dengan MySQL untuk menyimpan umpan balik pengguna.
 
 Nama Database: user_auth
 
 Nama Tabel: feedback
 
-Skrip SQL untuk membuat tabel ini harus disediakan secara terpisah di repositori.
+👉 Skrip SQL untuk membuat tabel tersedia secara terpisah dalam repositori.
 
-Panduan Penggunaan
-Pastikan Anda telah menginstal semua library yang diperlukan:
-pip install requests beautifulsoup4
+🚀 Cara Menjalankan
+1. Persiapan Lingkungan
 
-Jalankan skrip Python dengan perintah berikut:
+Pastikan Python sudah terinstal, lalu pasang library yang diperlukan:
+
+pip install requests beautifulsoup4 mysql-connector-python
+
+2. Jalankan Skrip
 python your_script_name.py
 
-Masukkan kata kunci pencarian saat diminta.
+3. Input Pencarian
 
-Penjelasan Teknis
-Skrip menggunakan requests untuk mengirim permintaan GET ke URL pencarian Detik.com.
+Masukkan kata kunci saat diminta, lalu skrip akan otomatis mengambil artikel dari Detik.com.
 
-BeautifulSoup digunakan untuk mengurai konten HTML yang diterima dan mengekstrak data yang relevan menggunakan selektor CSS.
+⚙️ Penjelasan Teknis
 
-Looping digunakan untuk menavigasi halaman hasil pencarian berikutnya.
+requests digunakan untuk mengirim HTTP GET request ke halaman pencarian Detik.com.
 
-Pencegahan kesalahan (error handling) diimplementasikan untuk menangani kasus seperti koneksi gagal, respons kosong, atau elemen yang hilang.
+BeautifulSoup digunakan untuk parsing HTML dan mengekstrak data dengan CSS selector.
+
+Looping & pagination dipakai untuk menavigasi hasil pencarian hingga 3 halaman.
+
+Error handling diimplementasikan untuk menangani:
+
+Koneksi gagal
+
+Respons kosong
+
+Elemen HTML yang hilang
