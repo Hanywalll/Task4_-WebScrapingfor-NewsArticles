@@ -11,13 +11,13 @@ Dengan memasukkan kata kunci pencarian, pengguna dapat memperoleh daftar artikel
 
 📑 Mengambil detail artikel:
 
-Judul
+1 . Judul
 
-Tautan gambar
+2.  Tautan gambar
 
-Teks isi
+3.  Teks isi
 
-Waktu publikasi
+4.  Waktu publikasi
 
 📄 Mendukung pagination hingga 3 halaman hasil pencarian.
 
@@ -35,32 +35,6 @@ Nama Tabel: feedback
 
 👉 Skrip SQL untuk membuat tabel tersedia secara terpisah dalam repositori.
 
-🚀 Cara Menjalankan
-1. Persiapan Lingkungan
 
-Pastikan Python sudah terinstal, lalu pasang library yang diperlukan:
-
-pip install requests beautifulsoup4 mysql-connector-python
-
-2. Jalankan Skrip
-python your_script_name.py
-
-3. Input Pencarian
-
-Masukkan kata kunci saat diminta, lalu skrip akan otomatis mengambil artikel dari Detik.com.
-
-⚙️ Penjelasan Teknis
-
-requests digunakan untuk mengirim HTTP GET request ke halaman pencarian Detik.com.
-
-BeautifulSoup digunakan untuk parsing HTML dan mengekstrak data dengan CSS selector.
-
-Looping & pagination dipakai untuk menavigasi hasil pencarian hingga 3 halaman.
-
-Error handling diimplementasikan untuk menangani:
-
-Koneksi gagal
-
-Respons kosong
 
 Elemen HTML yang hilang
