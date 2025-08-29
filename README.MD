@@ -4,9 +4,10 @@ Proyek ini adalah aplikasi **web scraping berbasis Python** yang dirancang untuk
 Dengan memasukkan kata kunci pencarian, pengguna dapat memperoleh daftar artikel yang relevan beserta detailnya.
 
 ---
+## Framework
+- **Flask** 
 
 ## ✨ Fitur
-
 - 🔍 Menerima input berupa kata kunci pencarian.
 - 📑 Mengambil detail artikel:
   1. Judul  
