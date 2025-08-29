@@ -1,0 +1,165 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+        
+h1 {
+    text-align: center;
+    color: #1a559e;
+    font-size: 2.2em;
+    margin-bottom: 24px;
+}
+        
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    gap: 12px;
+    max-width: 900px; /* Batasi lebar form agar tetap terlihat rapi */
+    margin-left: auto;
+    margin-right: auto;
+}
+        
+#query-input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#query-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+        
+button {
+    padding: 12px 24px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: 600;
+}
+        
+button:hover {
+    background-color: #2563eb;
+}
+        
+button:active {
+    transform: scale(0.98);
+}
+
+.article-card {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    transition: background-color 0.3s;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
+        
+.article-card:last-child {
+    border-bottom: none;
+}
+
+.article-card:hover {
+    background-color: #f8fafc;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+        
+.article-image {
+    flex-shrink: 0;
+}
+        
+.article-image img {
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+        
+.article-content {
+    flex-grow: 1;
+}
+        
+.article-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+        
+.article-content h2 a {
+    color: #1a559e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+        
+.article-content h2 a:hover {
+    color: #0c3360;
+    text-decoration: underline;
+}
+        
+.article-content p {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 0.9em;
+}
+        
+.article-content .meta {
+    font-size: 0.8em;
+    color: #64748b;
+}
+        
+.hidden {
+    display: none;
+}
+        
+#loading {
+    text-align: center;
+    margin-top: 20px;
+    color: #4a90e2;
+}
+        
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-left-color: #3b82f6;
+    animation: spin 1s ease infinite;
+    margin: 10px auto;
+}
+        
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+        
+#results-container {
+    max-width: 900px; /* Batasi lebar hasil untuk keterbacaan */
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .article-card {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    .article-image img {
+        width: 100%;
+        height: auto;
+    }
+}
