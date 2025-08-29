@@ -1,5 +1,5 @@
 📰 Web Scraping for News Articles (Detik.com)
-📌 Deskripsi Proyek
+
 
 Proyek ini adalah aplikasi web scraping berbasis Python yang dirancang untuk mengambil artikel berita dari Detik.com
 .
